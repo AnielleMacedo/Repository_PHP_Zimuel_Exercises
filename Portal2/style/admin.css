@@ -1,0 +1,12 @@
+/*largura do form*/
+form{
+	width: 50%;
+	margin-left: 25%;
+	/*border: solid violet 1px;*/
+	padding: 5%;
+	margin-top: 10%;
+}
+
+body {
+  background-image: url(https://wallperio.com/data/out/268/news-wallpapers_610561284.jpg);
+}
