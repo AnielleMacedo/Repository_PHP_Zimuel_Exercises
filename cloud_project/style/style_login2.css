@@ -1,0 +1,98 @@
+
+
+body{
+  background-image:url("./../images/cloud_back.jpg");
+  background-size:cover;
+  color:#FFF;
+}
+::placeholder {
+  color: #FFF;
+  opacity: 0.7; 
+}
+
+.F_title{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top:45%;
+  left:45%;
+  font-size:3.3rem;
+  text-shadow: 2px 2px #000000;
+  animation: left_fade_in 1s linear;
+}
+.S_title{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top:53%;
+  left:55%;
+  font-size:1.5rem;
+  text-shadow: 2px 2px #000000;
+  animation: right_fade_in 2s linear;
+}
+.login-btn{
+  outline:none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top:60%;
+  left:50%;
+  animation: login 0.5s infinite;
+}
+.login-div{
+  cursor:pointer;
+  animation: fade_in 3s linear;
+}
+.modal-dialog {
+  position: absolute;
+  transform: translate(-50%, -50%)!important;
+  top:50%;
+  left:50%;
+  animation: fade_in 0.5s linear;
+}
+.modal-title{
+  text-shadow:2px 2px #000;
+}
+.input-cell{
+  height: 40px;
+  padding: 10px;
+  background: #5A5F73;
+  border-radius: 30px;
+  outline:none;
+}
+.input-div{
+  margin:20px;
+}
+.modal-content{
+  margin: 0px 20px;
+}
+.ac_label{
+  margin-right: 25px;
+}
+@keyframes left_fade_in{
+  0%{
+    opacity:0;
+    left:40%;
+  }
+}
+
+@keyframes right_fade_in{
+  0% {
+    opacity:0;
+    left:60%;
+  }
+  50%{
+    opacity:0;
+    left:60%;
+  }
+}
+
+@keyframes login{
+  from {
+    opacity:0;
+  }
+}
+@keyframes fade_in{
+  from{
+    opacity:0;
+  }
+}
+
+
