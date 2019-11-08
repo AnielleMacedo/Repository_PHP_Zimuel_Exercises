@@ -2,7 +2,7 @@
 //session_start();
 
 //chiamo la conessione db nessa ordem e embaixo faz o form
-require './db/conexao.php';
+require './db/connection.php';
 
 $message = '';
 
@@ -95,17 +95,17 @@ function clean_fields(){
 
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Registration</title>
-  <!--aggiungo version 12 a href per aggiornare cache in browser chrome-->
-  <link rel="stylesheet" href="style/style_register.css?version=12">
-  <!--<link href='https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.css' type='text/css'>-->
-</head>
-<body>
-    <?php //mostro a msg de sucesso do login declarada sopra
+  <head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="./style/style_register.css?version=12">
+  </head>
+  <body>
+
+    <?php //msg errore o success
     if(!empty($message)): ?>
       <p id="msg-success" class="msg"><?= $message ?></p>
     <?php endif; ?>
+    
     <div id="form-block">
       <div id="form-block--left">
         <div id="left-content" >
@@ -118,14 +118,13 @@ function clean_fields(){
             <input name="password" type="password" placeholder="Enter your Password" value="<?php echo htmlentities(isset($_POST["password"]) ? $_POST["password"] : "");  ?>" required>
             <input name="confirm_password" type="password" placeholder="Confirm your Password" value="<?php echo htmlentities(isset($_POST["confirm_password"]) ? $_POST["confirm_password"] : ""); ?>" required>
             <input id="check-btn" class="login-button" type="submit" value="Register" name="login-but">
-            <!--<button class="login-button">Register</button>-->
           </form>
         </div>
         <div class="bottom-account">Already have an account?<a class="email-link" href="login.php" title="Sign in by credentials">Login&#8594;</a></div>
       </div>
       <!--div da imagem-->
-      <div id="form-block--right"><img src="images/cloud10.jpg" style="background-size: cover"></div>
-      <!--<div id="form-block--right"><img src="https://wallpaperbro.com/img/199719.jpg"/></div>-->
+      <div id="form-block--right"><img src="./images/cloud10.jpg" style="background-size: cover"></div>
+      
     </div>
   </body>
   </html>

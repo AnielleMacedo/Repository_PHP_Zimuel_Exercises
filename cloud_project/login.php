@@ -1,11 +1,10 @@
 <?php
 session_start(); //pode usar session ou post
 
-require './db/conexao.php';
+require './db/connection.php'; //p se conectar com a home
 
 $message = '';
 
-//try {
 
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 //se pressiona o botao login faz isso:
@@ -32,11 +31,6 @@ if (isset($_POST["login"])) {
 		$message = "Sorry. Those credentials don't match!";
 	}
 }
-/*}
-catch (PDOException $error)
-{
-$message = $error->getMessage();
-}*/
 ?>
 
 
@@ -46,10 +40,10 @@ $message = $error->getMessage();
 	<head>
 		<meta charset="utf-8">
 		<title>Login</title>
-		<link rel="stylesheet" href="style/style_login.css">
+		<link rel="stylesheet" href="./style/style_login.css">
 	</head>
 	<body>
-		<?php //mostro a msg de erro das credentials do login declarada sopra
+		<?php //msg in caso di errore o success
 		if(!empty($message)): ?>
 		<p class="msg"> <?= $message ?></p>
 		<?php endif; ?>
@@ -94,12 +88,12 @@ $message = $error->getMessage();
 				<button class="btn" name= login style="font-weight: bold">Login </button>
 				<!--<input class="btn" type="submit" id= "btn" name= login value="Login">-->
 				<br><br>
-				<div><a href="register.php" style="font-family: 'Dancing Script', cursive;font-size:23px ; color: #01A9DB">Register</a></div>
+				<div><a href="register.php" style="font-family: 'Dancing Script', cursive;font-size:23px ; color: #01A9DB; text-decoration: none;">Register</a></div>
 			</div>
 		</form>
 		<!--richiamo js code-->
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-		<script  src="script/script_login.js"></script>
+		<script  src="../script/script_login.js"></script>
 		
 	</body>
 </html>

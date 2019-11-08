@@ -1,0 +1,85 @@
+body{
+  background-image:url("./../images/cloud_back.jpg");
+  /*background-image: url(https://wallpaperbro.com/img/967251.jpg);
+  background: url("./../images/connection.jpg") no-repeat;*/
+  background-size:cover;
+  color:#FFF;
+}
+
+.presentation{
+  padding-top: 40px;
+}
+
+.titolo{
+  position: absolute;
+  padding-bottom: 50px;
+  transform: translate(-80%, -50%);
+  top:45%;
+  left:55%;
+  font-size:45px;
+  animation: left_fade_in 1.5s linear;
+  /*border: solid 1px black;*/
+  text-shadow: 2px 2px #A4A4A4;
+}
+
+@keyframes left_fade_in{
+  0%{
+    opacity:0;
+    left:40%;
+  }
+}
+
+.subtitolo{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding-bottom: 30px;
+  top:55%;
+  left:50%;
+  font-size:30px;
+  /*border: solid 1px black;*/
+  text-shadow: 1px 2px #A4A4A4;
+  animation: right_fade_in 2s linear;
+}
+
+@keyframes right_fade_in{
+  0% {
+    opacity:0;
+    left:60%;
+  }
+  50%{
+    opacity:0;
+    left:60%;
+  }
+}
+
+.btn-go{
+  outline:none;
+  text-decoration: none;
+  font-size:20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top:65%;
+  left:50%;
+  animation: buttgo 2s infinite;
+  color: #F2F2F2;
+  text-shadow: 1px 0.5px #A4A4A4;
+}
+@keyframes buttgo{
+  from {
+    opacity:0;
+  }
+}
+
+.go-here{
+  animation: fade_in 2.5s linear;
+  cursor:pointer;
+}
+@keyframes fade_in{
+  from{
+    opacity:0;
+  }
+}
+
+
+
+

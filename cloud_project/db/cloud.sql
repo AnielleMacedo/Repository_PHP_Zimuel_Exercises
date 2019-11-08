@@ -1,14 +1,11 @@
---EXPORT DEL DATABASE DI LOGIN--
-
-
 -- phpMyAdmin SQL Dump
 -- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21-Out-2019 às 20:09
--- Versão do servidor: 10.4.6-MariaDB
--- versão do PHP: 7.3.9
+-- Creato il: Nov 08, 2019 alle 14:58
+-- Versione del server: 10.4.6-MariaDB
+-- Versione PHP: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -22,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `cloud`
+-- Database: `cloud`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `login`
+-- Struttura della tabella `login`
 --
 
 CREATE TABLE `login` (
@@ -42,36 +39,33 @@ CREATE TABLE `login` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `login`
+-- Dump dei dati per la tabella `login`
 --
 
 INSERT INTO `login` (`id`, `name`, `username`, `email`, `password`, `privilege`, `close_registry`) VALUES
-(1, '', 'anielle@gmail.com', '', 'lucas', 0, '2019-10-21 18:03:26'),
-(2, '', 'sartori@gmail.com', '', '1234', 0, '2019-10-21 18:03:26'),
-(3, '', 'mason@gmail.com', '', 'cloud', 0, '2019-10-21 18:03:26'),
-(4, '', 'admin', '', 'its2019', 0, '2019-10-21 18:03:26'),
-(5, '', 'master', '', '1234', 0, '2019-10-21 18:03:26'),
-(6, 'Anielle Macedo', 'a.macedo', 'anielle@gmail.com', '1234', 1, '2019-10-21 18:06:16');
+(1, 'ANIELLE GOMES MACEDO', 'anielle', 'anielle@gmail.com', '$2y$10$qUh8upByHwFa6WxHK4z6kOGrTOYuE.kGXxxFwIT0WkgKAs1/h.qR.', 0, '2019-11-08 13:47:22'),
+(2, 'ALESSANDRO SARTORI', 'sartori', 'sartori@hotmail.com', '$2y$10$gFjBQuTkudGAhWKlObCk1OlSxow2dQkSnCH2dYudmbvyol9VFefga', 0, '2019-11-08 13:48:39'),
+(3, 'ALESSANDRO MASON', 'mason', 'mason@gmail.com', '$2y$10$BjWLGnaEipuxaCj5r6R9ZO9aPNHQ62kflLf96c9QgFdTrwR4X1kGy', 0, '2019-11-08 13:50:08');
 
 --
--- Índices para tabelas despejadas
+-- Indici per le tabelle scaricate
 --
 
 --
--- Índices para tabela `login`
+-- Indici per le tabelle `login`
 --
 ALTER TABLE `login`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT per le tabelle scaricate
 --
 
 --
--- AUTO_INCREMENT de tabela `login`
+-- AUTO_INCREMENT per la tabella `login`
 --
 ALTER TABLE `login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

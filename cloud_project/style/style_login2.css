@@ -1,98 +1,192 @@
-
-
-body{
-  background-image:url("./../images/cloud_back.jpg");
-  background-size:cover;
-  color:#FFF;
-}
-::placeholder {
-  color: #FFF;
-  opacity: 0.7; 
+body {
+  /*background: linear-gradient(75deg, #2980b9, #2c3e50) top left fixed; /*cria gradiente de cores no fundo*/
+   background-image: linear-gradient(45deg, #E0F8F7, #EFF8FB);
+   margin-top: 30px; 
+   font-family: sans-serif;
 }
 
-.F_title{
+/* div finestra principal*/
+.containerlogin {
+  position: relative;
+  margin: auto;
+  margin-bottom: 100px;
+  height: 510px;
+  width: 400px;
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  border-radius: 10px;
+  background:#FAFAFA;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.containerlogin a:hover {
+  text-decoration: underline;
+}
+
+/*imagem superior*/
+.containerlogin #header {
+  background-image: url("./../images/nuvem.jpg");
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+  height: 180px;
+  width: 100%;
+  margin-top: 0px;
+}
+
+/*cloud project escrita*/
+.containerlogin #header #cloud-head h1 {
+  font-size: 20px;
+  font-family: lato;
+  letter-spacing: 1px;
+  padding-top: 55px;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 0;
+  font-weight: bold;
+  color: white;
+  line-height: 95px;
+}
+
+/*user e pwd*/
+.containerlogin form .group {
+  position: relative;
+  margin-top: 40px;  /*margem top do username*/
+  margin-left: 40px;
+
+}
+
+/*input user*/
+.containerlogin form .group input {
+  font-size: 14px; /*cor input utente*/
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #848484; /*dimensao riga*/
+}
+
+.containerlogin form .group input:focus {
+  outline: none; /*elimino borda*/
+}
+
+.containerlogin form .group input:focus ~ label, .containerlogin form .group input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #00BFFF; /*color after click*/
+}
+
+.containerlogin form .group input:focus ~ .line:before, .containerlogin form .group input:focus ~ .line:after {
+  width: 50%; /*largura focus*/
+}
+
+/*.containerlogin form .group input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}*/
+
+
+.containerlogin form .group .line {
+  position: relative;
+  display: block;
+  width: 315px;
+}
+
+/*dimensione colore riga after*/
+.containerlogin form .group .line:before, .containerlogin form .group .line:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
   position: absolute;
-  transform: translate(-50%, -50%);
-  top:45%;
-  left:45%;
-  font-size:3.3rem;
-  text-shadow: 2px 2px #000000;
-  animation: left_fade_in 1s linear;
-}
-.S_title{
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top:53%;
-  left:55%;
-  font-size:1.5rem;
-  text-shadow: 2px 2px #000000;
-  animation: right_fade_in 2s linear;
-}
-.login-btn{
-  outline:none;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top:60%;
-  left:50%;
-  animation: login 0.5s infinite;
-}
-.login-div{
-  cursor:pointer;
-  animation: fade_in 3s linear;
-}
-.modal-dialog {
-  position: absolute;
-  transform: translate(-50%, -50%)!important;
-  top:50%;
-  left:50%;
-  animation: fade_in 0.5s linear;
-}
-.modal-title{
-  text-shadow:2px 2px #000;
-}
-.input-cell{
-  height: 40px;
-  padding: 10px;
-  background: #5A5F73;
-  border-radius: 30px;
-  outline:none;
-}
-.input-div{
-  margin:20px;
-}
-.modal-content{
-  margin: 0px 20px;
-}
-.ac_label{
-  margin-right: 25px;
-}
-@keyframes left_fade_in{
-  0%{
-    opacity:0;
-    left:40%;
-  }
+  background: #01A9DB;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
 }
 
-@keyframes right_fade_in{
-  0% {
-    opacity:0;
-    left:60%;
-  }
-  50%{
-    opacity:0;
-    left:60%;
-  }
+.containerlogin form .group .line:before {
+  left: 50%;
+}
+.containerlogin form .group .line:after {
+  right: 50%;
 }
 
-@keyframes login{
+/*labels user e pwd*/
+.containerlogin form .group label {
+  color: #01A9DB;
+  font-size: 17px;
+  font-weight: 300;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/*DIV formato BOTAO login*/
+.containerlogin form button {
+  background-color: #01A9DB; /*cor botao*/
+  border: 2px solid #fff;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  margin: 40px auto  0 auto;
+  padding: 10px 60px;
+  display: block;
+}
+
+/*ANIMACAO BOTAO LOGIN*/
+.containerlogin form button:hover, .containerlogin form button:focus {
+  background-color: #2ECCFA;
+  border-color: #F2F2F2;
+  outline: none;
+  color: white; /*hover azul*/
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.containerlogin #footer{
+  width: 100%;
+  height: 50px;
+  background-image: url("./../images/footer2.jpg");
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+.containerlogin #footer p a {
+  margin-left: 3px;
+  color: white;
+}
+
+/*not a member register*/
+.containerlogin p {
+  font-size: 17px;
+  text-align: center;
+  font-family: lato;
+}
+
+/* Animazioni 
+@-webkit-keyframes inputHighlighter {
   from {
-    opacity:0;
+    background: #ff8800;
+  }
+  to {
+    width: 0;
+    background: transparent;
   }
 }
-@keyframes fade_in{
-  from{
-    opacity:0;
+@keyframes inputHighlighter {
+  from {
+    background: #ff8800;
   }
-}
-
-
+  to {
+    width: 0;
+    background: transparent;
+  }
+}*/

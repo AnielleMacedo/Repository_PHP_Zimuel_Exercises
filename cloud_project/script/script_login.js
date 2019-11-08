@@ -1,4 +1,4 @@
-//sobe e desce com form
+//sale scendi form
 $('#password').focusin(function(){
 $('form').addClass('up')
 });
@@ -6,7 +6,7 @@ $('#password').focusout(function(){
 $('form').removeClass('up')
 });
 
-// movimento olhos
+// movimento occhi
 $(document).on( "mousemove", function( event ) {
 var dw = $(document).width() / 15;
 var dh = $(document).height() / 15;

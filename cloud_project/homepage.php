@@ -6,7 +6,7 @@ if(isset($_SESSION["username"]))
 {
   echo '<h3>Welcome ' .$_SESSION["username"]. ' </h3>' .'<br>';
 }else{
-  header("location:login.php");//altrimente continuo na pagina login
+  header("location:login.php");//altrimente continuo in page login
 }
 
 
@@ -17,8 +17,7 @@ if(isset($_SESSION["username"]))
 <html lang="pt-br">
 <head>
   <title>Home</title>
-  <link rel="stylesheet" href="style/style_home.css">
-  <script src="script/script_home.js"></script>
+  <link rel="stylesheet" href="./style/style_home.css">
 </head>
 <body>
   <!--MENU-->
@@ -37,9 +36,9 @@ if(isset($_SESSION["username"]))
   <!--HOME-->
   <article class="home">
     <h1 id="section1"></h1>
-    <div id="container-image"><img src="images/cloud4.jpg"></div><br/>
+    <div id="container-image"><img src="./images/cloud4.jpg"></div><br/>
   </article>
-  <!--galeria fotos-->
+  <!--galeria foto-->
   <article class="galeria">
     <h1 id="section2">Gallery</h1>
     <h4>Spazio per le images</h4>
@@ -47,22 +46,22 @@ if(isset($_SESSION["username"]))
     <div class="container-gallery">
       <div class="gallery">
         <div class="gallery-item">
-          <img class="gallery-image" src="images/rasmus_lerdof2.jpg">
+          <img class="gallery-image" src="./images/rasmus_lerdof2.jpg">
         </div>
         <div class="gallery-item">
-          <img class="gallery-image" src="images/car.jpg">
+          <img class="gallery-image" src="./images/car.jpg">
         </div>
         <div class="gallery-item">
           <img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop">
         </div>
         <div class="gallery-item">
-          <img class="gallery-image" src="images/turtle.jpg">
+          <img class="gallery-image" src="./images/turtle.jpg">
         </div>
         <div class="gallery-item">
-          <img class="gallery-image" src="images/mountain.jpg">
+          <img class="gallery-image" src="./images/mountain.jpg">
         </div>
         <div class="gallery-item">
-          <img class="gallery-image" src="images/galaxy2.gif">
+          <img class="gallery-image" src="./images/galaxy2.gif">
         </div>
       </div>
     </div>

@@ -99,48 +99,12 @@ input[type="text"], input[type="email"], input[type="password"]{
     font-size: 20px;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
+    
 }
 
 .login-button:hover {
   background-color: #81DAF5;
 }
-
-/*.signup-button {
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  display: inline-block;
-  position: inherite;
-
-  border: 1px solid green;
-  color: #414141;
-  padding: 15px 70px;
-  margin: 10px 0px;
-  transition: transform 0.3s, box-shadow 0.5s ease-out;
-}*/
-
-
-
-/*.icon {
-  display: inline-block;
-  font-size: 18px;
-  position: absolute;
-  left: 50px;
-  margin-top: -3px;
-}
-
-.zocial-googleplus {
-  color: #D24B40;
-}
-
-.zocial-facebook {
-  color: #425693;
-}
-
-.zocial-twitter {
-  color: #4E93F9;
-}
-
 
 
 /*Already have an account?*/

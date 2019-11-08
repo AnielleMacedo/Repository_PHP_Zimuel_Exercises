@@ -1,50 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br" >
 <head>
-	<title>Login</title>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="./style/style_login2.css">
 
-	<link rel="stylesheet" href="style/style_login2.css">
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">-->
+
 </head>
 <body>
 
+<div class="containerlogin">
+  <div id="header">
+    <div id="cloud-head"><h1>Cloud Project</h1></div>
+  </div>
 
-	<h1 class="F_title" >Cloud Project</h1>
-	<h2 class="S_title">By Macedo Mason & Sartori</h2>
-<div class="login-div">
-<br><br>
-<a  class="login-btn" data-toggle="modal" data-target="#pop_login">
-  Go here!
-</a>
-</div>
-<div class="modal" id="pop_login">
-  <div class="modal-dialog ">
-    <div class="modal-content bg-dark">
-
-    	<!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Login Form</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-      <form>
-        <div class="input-div">
-          <label class="ac_label" for="ac">Login:</label>
-          <input id="ac" class="input-cell" type="text" placeholder="User ID" required></input></div>
-        <div class="input-div">
-          <label class="pw_label" for="pw">Password:</label>
-        <input class="input-cell" id="pw"  type="password" placeholder="password" required></input>
-      </div>
-      <div class="w-100 text-right">
-        <input type="submit" class="btn btn-dark" value="Login"/></div>
-        </form>
-      </div>
-
-
+  <form name="LoginForm" class="account_form" method="" action="">
+    <div class="group">
+      <input type="text" name="username" id="username" required>
+      <!--<span class="highlight"></span>-->
+      <span class="line"></span>
+      <label>Username</label>
     </div>
+    <div class="group">
+      <input type="password" name="password" id="password" autocomplete="off" required>
+      <!--<span class="highlight"></span>-->
+      <span class="line"></span>
+      <label>Password</label>
+    </div>
+    <button type="submit" name="login" class="submit">Login</button>
+  </form>
+  <div id="footer">
+    <p>Not a member? <a href="register.php" class="register">Register</a></p>
   </div>
 </div>
 
+  
 </body>
 </html>
