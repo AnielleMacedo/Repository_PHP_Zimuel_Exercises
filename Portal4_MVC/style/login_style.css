@@ -1,0 +1,23 @@
+.image-login {
+  /*background-image: url(https://wallpaperbro.com/img/991604.jpg);*/
+  background-image: url(https://wallpaperbro.com/img/991616.jpg);
+ background-size: cover;
+ background-position: center;
+	height: 400px;
+	width: 100%;
+	text-align: left;
+	opacity: 0.7; 
+}
+
+.container{
+	color:#FBFBEF;
+	  opacity: 0.9;
+}
+/*largura do form*/
+form{
+	width: 50%;
+	margin-left: 25%;
+	/*border: solid violet 1px;*/
+	padding: 5%;
+	margin-top: 10%;
+}
